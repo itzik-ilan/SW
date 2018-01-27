@@ -1,0 +1,10 @@
+<div ng-init="itemCtrl.loadItem($stateParams.url)">
+    <h2>Star Wars <span class="text-primary">{{itemCtrl.item.name}}</span> info  </h2>
+    <table class="table spacer">
+      <tr ng-repeat="(key, value) in itemCtrl.item">
+        <td> {{key}} </td>
+        <td> {{value}} </td>
+      </tr>
+    </table>
+    <a ui-sref="list()">Back To List</a>
+</div>

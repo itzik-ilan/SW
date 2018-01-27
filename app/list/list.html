@@ -1,0 +1,15 @@
+<div>
+    <h2>Star Wars People List</h2>
+    <div class="input-group spacer" ng-init="listCtrl.getPeople()">
+      <input type="text" ng-model="filterTxt" class="form-control" placeholder="Search">
+      <div class="input-group-btn">
+        <button class="btn btn-default" type="submit">Search</button>
+      </div>
+    </div>
+    <div class="list-group spacer">
+      <a ng-repeat="item in listCtrl.list | filter:{ name: filterTxt } track by $index "
+         ui-sref="item({url: item.url})"
+         class="list-group-item sw-item-list">{{item.name}}</a>
+    </div>
+</div>
+<!-- TEST 2: {{listCtrl.test}} !!-->

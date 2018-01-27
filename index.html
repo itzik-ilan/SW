@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>myApp</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- angular -->
+    <script src="3rdParty/angular.min.js"></script>
+    <script src="3rdParty/angular-ui-router.js"></script>
+
+    <!-- app js-->
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="app.run.js"></script>
+    <script src="app\services\dataService.service.js"></script>
+    <script src="app\list\list.controller.js"></script>
+    <script src="app\item\item.controller.js"></script>
+
+    <!-- site css-->
+    <link rel="stylesheet" type="text/css" href="css\site.css">
+
+</head>
+
+<body>
+    <div ui-view></div>
+    <script src="3rdParty/jquery.min.js"></script>
+</body>
+</html>
